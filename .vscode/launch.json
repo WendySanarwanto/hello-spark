@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "cwd": "${fileDirname}",
+            "startupClass": "com.wendysa.hellospark.Main",
+            "options": [
+                "-classpath",
+                "${workspaceRoot}/target/classes"
+            ],
+            "jdkPath": "${env.JAVA_HOME}/bin",
+            "preLaunchTask": "compile"
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasename}",
+            "options": [
+                "-classpath",
+                "\"${fileDirname};.\""
+            ],
+            "externalConsole": true
+        }
+    ]
+}
